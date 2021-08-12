@@ -2,7 +2,7 @@
   "name": "starship",
   "version": "1.0.0",
   "description": "Phaser JS game inspired by galaga",
-  "main": "index.js",
+  "default": "build/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
@@ -21,5 +21,8 @@
   "dependencies": {
     "parcel": "^2.0.0-rc.0",
     "phaser": "^3.55.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
   }
 }

@@ -103,7 +103,7 @@ export default class Play extends Phaser.Scene {
         enemy.body.velocity.y = 0;
         this.lives_left--;
         this.lives_left_text.setText(`Lives: ${this.lives_left}`);
-        if (this.lives_left === 2) {
+        if (this.lives_left <= 0) {
             player.setActive(false);
             player.setVisible(false);
             this.game_over_text.setVisible(true);
