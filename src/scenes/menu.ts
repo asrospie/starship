@@ -5,6 +5,7 @@ import {
     FONT
 } from '../defaults';
 import { createStars, updateStars } from '../shared';
+import Play from './play';
 
 export default class Menu extends Phaser.Scene {
     title: Phaser.GameObjects.Text;
@@ -44,6 +45,11 @@ export default class Menu extends Phaser.Scene {
         })
 
         this.start_text.on('pointerdown', () => {
+            let play = this.scene.get('Play');
+            if (play.time.now > 0) {
+                this.scene.remove('Play');
+                this.scene.add('Play', Play, false);
+            }
             this.scene.start('Play');
         });
     }
