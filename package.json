@@ -1,0 +1,25 @@
+{
+  "name": "starship",
+  "version": "1.0.0",
+  "description": "Phaser JS game inspired by galaga",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asrospie/starship.git"
+  },
+  "author": "Alec Rospierski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asrospie/starship/issues"
+  },
+  "homepage": "https://github.com/asrospie/starship#readme",
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0",
+    "phaser": "^3.55.2"
+  }
+}
